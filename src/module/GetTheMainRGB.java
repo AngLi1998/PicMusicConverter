@@ -1,3 +1,5 @@
+package module;
+
 import javafx.css.converter.ColorConverter;
 
 import javax.imageio.ImageIO;

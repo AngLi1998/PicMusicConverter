@@ -1,3 +1,5 @@
+package module;
+
 public class RGB {
     private int Red;
     private int Green;
@@ -68,6 +70,6 @@ public class RGB {
 
     @Override
     public String toString() {
-        return "RGB" + "[" + this.Red + ","+this.Green+","+this.Blue+"]";
+        return "module.RGB" + "[" + this.Red + ","+this.Green+","+this.Blue+"]";
     }
 }

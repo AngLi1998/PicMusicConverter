@@ -1,3 +1,5 @@
+package module;
+
 public class RGBToHSLConverter {
 
     public static HueSatLight RGBToHSL(RGB rgb) {  //得到HSL

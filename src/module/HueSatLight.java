@@ -1,3 +1,5 @@
+package module;
+
 public class HueSatLight {
     private float h;     //Hue  色相，基本的色彩
     private float s;     //Saturation 画面饱和度
