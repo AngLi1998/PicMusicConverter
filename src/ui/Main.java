@@ -46,7 +46,9 @@ public class Main extends JFrame {
                     String path = jFileChooser.getSelectedFile().getAbsolutePath();
                     String name = jFileChooser.getSelectedFile().getName();
                     System.out.println("File Path："+path+";\nFile Name"+name);
-                    picture.setIcon(upload(path));
+
+                    ImageIcon img = new ImageIcon(path);
+                    picture.setIcon(upload(img));
                 }else{
                     System.out.println("No File Selected");
                 }
@@ -114,7 +116,9 @@ public class Main extends JFrame {
 //
 //        Image temp = img.getImage().getScaledInstance(sW, sH, img.getImage().SCALE_DEFAULT);
 //        ImageIcon icon = new ImageIcon(temp);
-        picture.setIcon(upload("C:\\Users\\Yifei Chen\\Desktop\\u=2835156641,1453869869&fm=26&gp=0.jpg"));
+        ImageIcon img = new ImageIcon(getClass().getResource("../PlusSign.jpg"));
+        ImageIcon icon = upload(img);
+        picture.setIcon(icon);
 
         setVisible(true);
     }
@@ -127,8 +131,7 @@ public class Main extends JFrame {
         return Math.min(imgH / imgW * panelW, panelH);
     }
 
-    private ImageIcon upload(String filename){
-        ImageIcon img = new ImageIcon(filename);
+    private ImageIcon upload(ImageIcon img){
         int sH = (int) scaleH(panel.getHeight(), panel.getWidth(), img.getIconHeight(), img.getIconWidth());
         int sW = (int) scaleW(panel.getHeight(), panel.getWidth(), img.getIconHeight(), img.getIconWidth());
 
