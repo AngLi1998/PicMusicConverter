@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aac2c1f-7779-4795-bbca-441a7dfa0ac6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jl1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jl1_0_1__2_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled3.iml" afterDir="false" />
-    </list>
+    <list default="true" id="3aac2c1f-7779-4795-bbca-441a7dfa0ac6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6695#6696#0" expanded="true" />
@@ -144,62 +135,18 @@
             <path>
               <item name="PicMusicConverter" type="b2602c69:ProjectViewProjectNode" />
               <item name="PicMusicConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PicMusicConverter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PicMusicConverter" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PicMusicConverter" type="b2602c69:ProjectViewProjectNode" />
               <item name="PicMusicConverter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PicMusicConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PicMusicConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PicMusicConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PicMusicConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
-              <item name="beauty &amp; style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PicMusicConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PicMusicConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
-              <item name="education" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PicMusicConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PicMusicConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
-              <item name="entertaiment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PicMusicConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PicMusicConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
-              <item name="news &amp; politics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PicMusicConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PicMusicConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
-              <item name="tech &amp; science" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PicMusicConverter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PicMusicConverter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
-              <item name="travel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -292,9 +239,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17315437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17315437" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -303,7 +249,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33002833" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -442,7 +388,7 @@
     <entry file="file://$PROJECT_DIR$/src/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6695#6696#0" expanded="true" />
