@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aac2c1f-7779-4795-bbca-441a7dfa0ac6" name="Default Changelist" comment="music added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$Music.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main.class" afterDir="false" />
-    </list>
+    <list default="true" id="3aac2c1f-7779-4795-bbca-441a7dfa0ac6" name="Default Changelist" comment="" />
     <ignored path="out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="191">
@@ -87,24 +75,6 @@
                 <element signature="e#6695#6696#0" expanded="true" />
                 <element signature="e#6730#6731#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/io/FileInputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -130,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="625" />
     <option name="y" value="40" />
     <option name="width" value="980" />
@@ -261,7 +231,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17315437" />
@@ -388,13 +358,6 @@
     <entry file="file://$PROJECT_DIR$/untitled3.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jl1.0.1.jar!/javazoom/jl/player/Player.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -413,6 +376,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -422,13 +399,6 @@
             <element signature="e#6695#6696#0" expanded="true" />
             <element signature="e#6730#6731#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
