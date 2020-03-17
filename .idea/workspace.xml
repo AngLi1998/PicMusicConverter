@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aac2c1f-7779-4795-bbca-441a7dfa0ac6" name="Default Changelist" comment="" />
+    <list default="true" id="3aac2c1f-7779-4795-bbca-441a7dfa0ac6" name="Default Changelist" comment="music added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$Music.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main.class" afterDir="false" />
+    </list>
+    <ignored path="out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,16 +77,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state relative-caret-position="191">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6695#6696#0" expanded="true" />
                 <element signature="e#6730#6731#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -104,6 +126,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/module/GetTheMainRGB.java" />
         <option value="$PROJECT_DIR$/src/ui/Main.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -159,11 +182,11 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/jlayer1.0.1/JLayer1.0.1/jl1.0.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -238,9 +261,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17315437" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17315437" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -249,7 +273,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33002833" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33002833" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -300,18 +324,22 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="music added" />
+    <option name="LAST_COMMIT_MESSAGE" value="music added" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ui/Main.java</url>
-          <line>258</line>
+          <line>259</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ui/Main.java</url>
-          <line>193</line>
+          <line>194</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -387,13 +415,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state relative-caret-position="191">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6695#6696#0" expanded="true" />
             <element signature="e#6730#6731#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
