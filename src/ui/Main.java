@@ -2,6 +2,8 @@ package ui;
 
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.Player;
+import module.GetTheMainRGB;
+import module.RGB;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -57,7 +59,15 @@ public class Main extends JFrame {
                 if(i== jFileChooser.APPROVE_OPTION){
                     String path = jFileChooser.getSelectedFile().getAbsolutePath();
                     String name = jFileChooser.getSelectedFile().getName();
+                    RGB rgb = null;
+                    try {
+                        rgb = GetTheMainRGB.getMainRGB(path);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(rgb);
                     System.out.println("File Path："+path+";\nFile Name"+name);
+
 
                     ImageIcon img = new ImageIcon(path);
                     picture.setIcon(upload(img));
@@ -268,6 +278,8 @@ public class Main extends JFrame {
             }
 
         }
+
+
 
 
     }

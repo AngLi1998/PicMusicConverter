@@ -5,7 +5,7 @@ package module;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.net.URL;
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +14,7 @@ public class GetTheMainRGB {
     public static RGB getMainRGB (String path) throws Exception {
         Map<Float, Integer> hueCountMap = new HashMap<>();
         Map<HueSatLight, Integer> hslCountMap = new HashMap<>();
-        BufferedImage image = ImageIO.read(new URL(path));
+        BufferedImage image = ImageIO.read(new File(path));
         int width = image.getWidth();
         int height = image.getHeight();
         int minx = image.getMinX();
