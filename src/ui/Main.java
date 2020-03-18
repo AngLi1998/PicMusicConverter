@@ -34,7 +34,6 @@ public class Main extends JFrame {
 
     public void Player(){
 
-        
         setTitle("Picture Player");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -47,11 +46,11 @@ public class Main extends JFrame {
         JLabel lblRecommendation = new JLabel("Recommendation");
         lblRecommendation.setHorizontalAlignment(SwingConstants.CENTER);
 
-        lblRecommendation.setFont(new Font(font, Font.PLAIN, 28));
+        lblRecommendation.setFont(new Font(font, Font.PLAIN, 20));
         lblRecommendation.setBounds(463, 58, 270, 53);
         contentPane.add(lblRecommendation);
 
-        JButton btnUpLoad = new JButton("Up Load");
+        JButton btnUpLoad = new JButton("Upload");
         btnUpLoad.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 JFileChooser jFileChooser = new JFileChooser();
@@ -67,7 +66,7 @@ public class Main extends JFrame {
                         e.printStackTrace();
                     }
                     System.out.println(rgb);
-                    System.out.println("File Path："+path+";\nFile Name"+name);
+                    System.out.println("File Path: "+path+";\nFile Name: "+name);
                     ImageIcon img = new ImageIcon(path);
                     picture.setIcon(upload(img));
                     if (rgb.Red > rgb.Green && rgb.Red > rgb.Blue) {
