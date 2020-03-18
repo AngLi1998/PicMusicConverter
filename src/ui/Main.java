@@ -67,11 +67,25 @@ public class Main extends JFrame {
                     }
                     System.out.println(rgb);
                     System.out.println("File Path："+path+";\nFile Name"+name);
-
-
                     ImageIcon img = new ImageIcon(path);
                     picture.setIcon(upload(img));
-                    lblRecommendation.setText("Recommendation:");
+                    if (rgb.Red > rgb.Green && rgb.Red > rgb.Blue) {
+                        lblRecommendation.setText("Recommendation: Action");
+                    } else if (rgb.Blue>rgb.Green && rgb.Green>rgb.Red) {
+                        lblRecommendation.setText("Recommendation: Beauty & Style");
+                    } else if (rgb.Green>rgb.Blue && rgb.Blue>rgb.Red) {
+                        lblRecommendation.setText("Recommendation: Education");
+                    } else if (rgb.Red>rgb.Blue && rgb.Blue>rgb.Green) {
+                        lblRecommendation.setText("Recommendation: Entertainment");
+                    } else if (rgb.Red > rgb.Green && rgb.Blue>rgb.Green) {
+                        lblRecommendation.setText("Recommendation: News & Politics");
+                    } else if (rgb.Red > rgb.Green && rgb.Blue>rgb.Red) {
+                        lblRecommendation.setText("Recommendation: Tech & Science");
+                    } else if (rgb.Green > rgb.Red && rgb.Red>rgb.Blue) {
+                        lblRecommendation.setText("Recommendation: Travel");
+                    } else {
+                        lblRecommendation.setText("Recommendation: Others");
+                    }
                 }else{
                     System.out.println("No File Selected");
                 }

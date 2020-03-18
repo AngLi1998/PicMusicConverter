@@ -1,9 +1,9 @@
 package module;
 
 public class RGB {
-    private int Red;
-    private int Green;
-    private int Blue;
+    public int Red;
+    public int Green;
+    public int Blue;
 
     public RGB() {}
     public RGB(int Red, int Green, int Blue){
