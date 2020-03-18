@@ -34,6 +34,7 @@ public class Main extends JFrame {
 
     public void Player(){
 
+        
         setTitle("Picture Player");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
