@@ -3,6 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3aac2c1f-7779-4795-bbca-441a7dfa0ac6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main$Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main$Music.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled3/ui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled3/ui/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -127,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584573069209</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="After upload a picture, a recommended music type will show up, and it will automatically play the recommended music">
+      <created>1584581669522</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584581669522</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -170,7 +187,8 @@
     <MESSAGE value="music added" />
     <MESSAGE value="After upload the image, main RGB will show up" />
     <MESSAGE value="After upload a picture, a recommended music type will show up" />
-    <option name="LAST_COMMIT_MESSAGE" value="After upload a picture, a recommended music type will show up" />
+    <MESSAGE value="After upload a picture, a recommended music type will show up, and it will automatically play the recommended music" />
+    <option name="LAST_COMMIT_MESSAGE" value="After upload a picture, a recommended music type will show up, and it will automatically play the recommended music" />
   </component>
   <component name="masterDetails">
     <states>

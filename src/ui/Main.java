@@ -69,33 +69,40 @@ public class Main extends JFrame {
                     System.out.println("File Path: "+path+";\nFile Name: "+name);
                     ImageIcon img = new ImageIcon(path);
                     picture.setIcon(upload(img));
-                    if (rgb.Red > rgb.Green && rgb.Red > rgb.Blue) {
+                    if (rgb.Red >= rgb.Green && rgb.Red > rgb.Blue) {
                         lblRecommendation.setText("Recommendation: Action");
-                        music = new Music("src/music/action");
+                        String pathM = getMusicPath("src/music/action");
+                        music = new Music(pathM);
                         music.start();
                     } else if (rgb.Blue>rgb.Green && rgb.Green>rgb.Red) {
                         lblRecommendation.setText("Recommendation: Beauty & Style");
-                        music = new Music("src/music/beauty&style");
+                        String pathM = getMusicPath("src/music/beauty & style");
+                        music = new Music(pathM);
                         music.start();
                     } else if (rgb.Green>rgb.Blue && rgb.Blue>rgb.Red) {
                         lblRecommendation.setText("Recommendation: Education");
-                        music = new Music("src/music/education");
+                        String pathM = getMusicPath("src/music/education");
+                        music = new Music(pathM);
                         music.start();
                     } else if (rgb.Red>rgb.Blue && rgb.Blue>rgb.Green) {
                         lblRecommendation.setText("Recommendation: Entertainment");
-                        music = new Music("src/music/entertainment");
+                        String pathM = getMusicPath("src/music/entertainment");
+                        music = new Music(pathM);
                         music.start();
                     } else if (rgb.Red > rgb.Green && rgb.Blue>rgb.Green) {
                         lblRecommendation.setText("Recommendation: News & Politics");
-                        music = new Music("src/music/news&politics");
+                        String pathM = getMusicPath("src/music/news & politics");
+                        music = new Music(pathM);
                         music.start();
                     } else if (rgb.Red > rgb.Green && rgb.Blue>rgb.Red) {
                         lblRecommendation.setText("Recommendation: Tech & Science");
-                        music = new Music("src/music/tech&science");
+                        String pathM = getMusicPath("src/music/tech&science");
+                        music = new Music(pathM);
                         music.start();
                     } else if (rgb.Green > rgb.Red && rgb.Red>rgb.Blue) {
                         lblRecommendation.setText("Recommendation: Travel");
-                        music = new Music("src/music/travel");
+                        String pathM = getMusicPath("src/music/travel");
+                        music = new Music(pathM);
                         music.start();
                     } else {
                         lblRecommendation.setText("Recommendation: Others");
