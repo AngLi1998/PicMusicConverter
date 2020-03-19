@@ -71,18 +71,32 @@ public class Main extends JFrame {
                     picture.setIcon(upload(img));
                     if (rgb.Red > rgb.Green && rgb.Red > rgb.Blue) {
                         lblRecommendation.setText("Recommendation: Action");
+                        music = new Music("src/music/action");
+                        music.start();
                     } else if (rgb.Blue>rgb.Green && rgb.Green>rgb.Red) {
                         lblRecommendation.setText("Recommendation: Beauty & Style");
+                        music = new Music("src/music/beauty&style");
+                        music.start();
                     } else if (rgb.Green>rgb.Blue && rgb.Blue>rgb.Red) {
                         lblRecommendation.setText("Recommendation: Education");
+                        music = new Music("src/music/education");
+                        music.start();
                     } else if (rgb.Red>rgb.Blue && rgb.Blue>rgb.Green) {
                         lblRecommendation.setText("Recommendation: Entertainment");
+                        music = new Music("src/music/entertainment");
+                        music.start();
                     } else if (rgb.Red > rgb.Green && rgb.Blue>rgb.Green) {
                         lblRecommendation.setText("Recommendation: News & Politics");
+                        music = new Music("src/music/news&politics");
+                        music.start();
                     } else if (rgb.Red > rgb.Green && rgb.Blue>rgb.Red) {
                         lblRecommendation.setText("Recommendation: Tech & Science");
+                        music = new Music("src/music/tech&science");
+                        music.start();
                     } else if (rgb.Green > rgb.Red && rgb.Red>rgb.Blue) {
                         lblRecommendation.setText("Recommendation: Travel");
+                        music = new Music("src/music/travel");
+                        music.start();
                     } else {
                         lblRecommendation.setText("Recommendation: Others");
                     }
