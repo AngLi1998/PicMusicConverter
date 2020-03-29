@@ -55,15 +55,13 @@ public class Train {
 
         Object objDataPairs = new JSONParser().parse(new FileReader("dataPairs.json"));
 
-        dataPairs = (JSONObject)objDataPairs;
+        Map<Integer, List<RGB>> mapDataPairs = (JSONObject)objDataPairs;
 
-//        Map<Integer, List<RGB>> mapDataPairs = (JSONObject)objDataPairs;
-//
-//            for (Map.Entry<Integer, List<RGB>> keySet: mapDataPairs.entrySet()) {
-//                int type = keySet.getKey();
-//                List<RGB> RGBs = keySet.getValue();
-//                dataPairs.put(type, RGBs);
-//        }
+            for (Map.Entry<Integer, List<RGB>> keySet: mapDataPairs.entrySet()) {
+                int type = keySet.getKey();
+                List<RGB> RGBs = keySet.getValue();
+                dataPairs.put(type, RGBs);
+            }
 
     }
 
