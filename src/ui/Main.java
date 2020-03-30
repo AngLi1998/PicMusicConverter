@@ -4,6 +4,8 @@ import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.Player;
 import module.GetTheMainRGB;
 import module.RGB;
+import module.Train;
+import org.json.simple.parser.ParseException;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -14,6 +16,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Random;
 
 
@@ -25,14 +28,30 @@ public class Main extends JFrame {
     private String font = "Tempus Sans ITC";
     private int size = 20;
 
-    public static void main(String[] args) {
+
+    private String typeOne = "Action";
+    private String typeTwo = "Beauty & Style";
+    private String typeThree = "Education";
+    private String typeFour = "Entertainment";
+    private String typeFive = "News & Politics";
+    private String typeSix = "Tech & Science";
+    private String typeSeven = "Travel";
+
+
+    private RGB rgb = null;
+
+    private Train train;
+
+
+    public static void main(String[] args) throws IOException, ParseException {
         Main m = new Main();
         m.Player();
 
     }
 
 
-    public void Player(){
+    public void Player() throws IOException, ParseException {
+        train = new Train();
 
         setTitle("Picture Player");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -59,7 +78,6 @@ public class Main extends JFrame {
                 if(i== jFileChooser.APPROVE_OPTION){
                     String path = jFileChooser.getSelectedFile().getAbsolutePath();
                     String name = jFileChooser.getSelectedFile().getName();
-                    RGB rgb = null;
                     try {
                         rgb = GetTheMainRGB.getMainRGB(path);
                     } catch (Exception e) {
@@ -69,38 +87,45 @@ public class Main extends JFrame {
                     System.out.println("File Path: "+path+";\nFile Name: "+name);
                     ImageIcon img = new ImageIcon(path);
                     picture.setIcon(upload(img));
-                    if (rgb.Red >= rgb.Green && rgb.Red > rgb.Blue) {
-                        lblRecommendation.setText("Recommendation: Action");
+
+                    try{
+                        music.stop();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    if (train.type(rgb) == 1) {
+                        lblRecommendation.setText("Recommendation: " + typeOne);
                         String pathM = getMusicPath("src/music/action");
                         music = new Music(pathM);
                         music.start();
-                    } else if (rgb.Blue>rgb.Green && rgb.Green>rgb.Red) {
-                        lblRecommendation.setText("Recommendation: Beauty & Style");
+                    } else if (train.type(rgb) == 2) {
+                        lblRecommendation.setText("Recommendation: " + typeTwo);
                         String pathM = getMusicPath("src/music/beauty & style");
                         music = new Music(pathM);
                         music.start();
-                    } else if (rgb.Green>rgb.Blue && rgb.Blue>rgb.Red) {
-                        lblRecommendation.setText("Recommendation: Education");
+                    } else if (train.type(rgb) == 3) {
+                        lblRecommendation.setText("Recommendation: " + typeThree);
                         String pathM = getMusicPath("src/music/education");
                         music = new Music(pathM);
                         music.start();
-                    } else if (rgb.Red>rgb.Blue && rgb.Blue>rgb.Green) {
-                        lblRecommendation.setText("Recommendation: Entertainment");
+                    } else if (train.type(rgb) == 4) {
+                        lblRecommendation.setText("Recommendation: " + typeFour);
                         String pathM = getMusicPath("src/music/entertainment");
                         music = new Music(pathM);
                         music.start();
-                    } else if (rgb.Red > rgb.Green && rgb.Blue>rgb.Green) {
-                        lblRecommendation.setText("Recommendation: News & Politics");
+                    } else if (train.type(rgb) == 5) {
+                        lblRecommendation.setText("Recommendation: " + typeFive);
                         String pathM = getMusicPath("src/music/news & politics");
                         music = new Music(pathM);
                         music.start();
-                    } else if (rgb.Red > rgb.Green && rgb.Blue>rgb.Red) {
-                        lblRecommendation.setText("Recommendation: Tech & Science");
+                    } else if (train.type(rgb) == 6) {
+                        lblRecommendation.setText("Recommendation: " + typeSix);
                         String pathM = getMusicPath("src/music/tech&science");
                         music = new Music(pathM);
                         music.start();
-                    } else if (rgb.Green > rgb.Red && rgb.Red>rgb.Blue) {
-                        lblRecommendation.setText("Recommendation: Travel");
+                    } else if (train.type(rgb) == 7) {
+                        lblRecommendation.setText("Recommendation: " + typeSeven);
                         String pathM = getMusicPath("src/music/travel");
                         music = new Music(pathM);
                         music.start();
@@ -117,7 +142,7 @@ public class Main extends JFrame {
         btnUpLoad.setBounds(103, 439, 226, 53);
         contentPane.add(btnUpLoad);
 
-        JButton btnTypeOne = new JButton("Action");
+        JButton btnTypeOne = new JButton(typeOne);
         btnTypeOne.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 try{
@@ -129,7 +154,7 @@ public class Main extends JFrame {
 
                 music = new Music(path);
                 music.start();
-                lblRecommendation.setText("Action");
+                lblRecommendation.setText(typeOne);
             }
 
         });
@@ -137,7 +162,7 @@ public class Main extends JFrame {
         btnTypeOne.setBounds(439, 124, 159, 53);
         contentPane.add(btnTypeOne);
 
-        JButton btnTypeTwo = new JButton("Beauty & Style");
+        JButton btnTypeTwo = new JButton(typeTwo);
         btnTypeTwo.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 try{
@@ -147,7 +172,7 @@ public class Main extends JFrame {
                 }
                 String path = getMusicPath("src/music/beauty & style");
                 music = new Music(path);
-                lblRecommendation.setText("Beauty & Style");
+                lblRecommendation.setText(typeTwo);
                 music.start();
             }
         });
@@ -155,7 +180,7 @@ public class Main extends JFrame {
         btnTypeTwo.setBounds(623, 124, 159, 53);
         contentPane.add(btnTypeTwo);
 
-        JButton btnTypeThree = new JButton("Education");
+        JButton btnTypeThree = new JButton(typeThree);
         btnTypeThree.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 try{
@@ -166,7 +191,7 @@ public class Main extends JFrame {
 
                 String path = getMusicPath("src/music/education");
                 music = new Music(path);
-                lblRecommendation.setText("Education");
+                lblRecommendation.setText(typeThree);
                 music.start();
             }
         });
@@ -174,7 +199,7 @@ public class Main extends JFrame {
         btnTypeThree.setBounds(439, 190, 159, 53);
         contentPane.add(btnTypeThree);
 
-        JButton btnTypeFour = new JButton("Entertainment");
+        JButton btnTypeFour = new JButton(typeFour);
         btnTypeFour.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 try{
@@ -184,7 +209,7 @@ public class Main extends JFrame {
                 }
                 String path = getMusicPath("src/music/entertaiment");
                 music = new Music(path);
-                lblRecommendation.setText("Entertainment");
+                lblRecommendation.setText(typeFour);
                 music.start();
             }
         });
@@ -192,7 +217,7 @@ public class Main extends JFrame {
         btnTypeFour.setBounds(623, 190, 159, 53);
         contentPane.add(btnTypeFour);
 
-        JButton btnTypeFive = new JButton("New & Politics");
+        JButton btnTypeFive = new JButton(typeFive);
         btnTypeFive.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 try{
@@ -202,7 +227,7 @@ public class Main extends JFrame {
                 }
                 String path = getMusicPath("src/music/news & politics");
                 music = new Music(path);
-                lblRecommendation.setText("New & Politics");
+                lblRecommendation.setText(typeFive);
                 music.start();
             }
         });
@@ -210,7 +235,7 @@ public class Main extends JFrame {
         btnTypeFive.setBounds(439, 255, 159, 53);
         contentPane.add(btnTypeFive);
 
-        JButton btnTypeSix = new JButton("Tech & Science");
+        JButton btnTypeSix = new JButton(typeSix);
         btnTypeSix.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 try{
@@ -220,7 +245,7 @@ public class Main extends JFrame {
                 }
                 String path = getMusicPath("src/music/tech & science");
                 music = new Music(path);
-                lblRecommendation.setText("Tech & Science");
+                lblRecommendation.setText(typeSix);
                 music.start();
             }
         });
@@ -228,7 +253,7 @@ public class Main extends JFrame {
         btnTypeSix.setBounds(623, 256, 159, 53);
         contentPane.add(btnTypeSix);
 
-        JButton btnTypeSeven = new JButton("Travel");
+        JButton btnTypeSeven = new JButton(typeSeven);
         btnTypeSeven.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 try{
@@ -238,7 +263,7 @@ public class Main extends JFrame {
                 }
                 String path = getMusicPath("src/music/travel");
                 music = new Music(path);
-                lblRecommendation.setText("Travel");
+                lblRecommendation.setText(typeSeven);
                 music.start();
             }
         });
@@ -247,6 +272,58 @@ public class Main extends JFrame {
         contentPane.add(btnTypeSeven);
 
         JButton btnLike = new JButton("Like");
+        btnLike.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                if(rgb != null) {
+                    String recom = lblRecommendation.getText();
+
+                    if (recom.contains(typeOne)) {
+                        try {
+                            train.addAndTrainOneDataPair(rgb, 1);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    } else if (recom.contains(typeTwo)) {
+                        try {
+                            train.addAndTrainOneDataPair(rgb, 2);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    } else if (recom.contains(typeThree)) {
+                        try {
+                            train.addAndTrainOneDataPair(rgb, 3);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    } else if (recom.contains(typeFour)) {
+                        try {
+                            train.addAndTrainOneDataPair(rgb, 4);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    } else if (recom.contains(typeFive)) {
+                        try {
+                            train.addAndTrainOneDataPair(rgb, 5);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    } else if (recom.contains(typeSix)) {
+                        try {
+                            train.addAndTrainOneDataPair(rgb, 6);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    } else if (recom.contains(typeSeven)) {
+                        try {
+                            train.addAndTrainOneDataPair(rgb, 7);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    rgb = null;
+                }
+            }
+        });
         btnLike.setFont(new Font(font, Font.PLAIN, size));
         btnLike.setBounds(556, 439, 226, 53);
         contentPane.add(btnLike);

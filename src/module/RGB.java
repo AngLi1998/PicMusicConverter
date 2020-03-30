@@ -1,9 +1,9 @@
 package module;
 
 public class RGB {
-    public int Red;
-    public int Green;
-    public int Blue;
+    private int red;
+    private int green;
+    private int Blue;
 
     public RGB() {}
     public RGB(int Red, int Green, int Blue){
@@ -13,16 +13,16 @@ public class RGB {
     }
 
     public int getRed(){
-        return Red;
+        return red;
     }
 
     public void setRed(int Red) {
         if (Red < 0) {
-            this.Red = 0;
+            this.red = 0;
         } else if (Red > 255)  {
-            this.Red = 255;
+            this.red = 255;
         } else {
-            this.Red = Red;
+            this.red = Red;
         }
     }
 
@@ -41,16 +41,16 @@ public class RGB {
     }
 
     public int getGreen() {
-        return Green;
+        return green;
     }
 
     public void setGreen (int Green) {
         if (Green < 0) {
-            this.Green = 0;
+            this.green = 0;
         } else if (Green > 255)  {
-            this.Green = 255;
+            this.green = 255;
         } else {
-            this.Green = Green;
+            this.green = Green;
         }
     }
 
@@ -70,6 +70,6 @@ public class RGB {
 
     @Override
     public String toString() {
-        return "module.RGB" + "[" + this.Red + ","+this.Green+","+this.Blue+"]";
+        return "module.RGB" + "[" + this.red + ","+this.green +","+this.Blue+"]";
     }
 }
