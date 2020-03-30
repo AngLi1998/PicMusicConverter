@@ -10,7 +10,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static java.lang.Math.abs;
 import static java.lang.Math.sin;
@@ -159,27 +162,37 @@ public class Train {
 
     private void read() throws IOException, ParseException {
 
-        Object objDataPairs = new JSONParser().parse(new FileReader("dataPairs.json"));
 
-        Map<String, Object> mapDataPairs = (JSONObject)objDataPairs;
 
-            for (Map.Entry<String, Object> keySet: mapDataPairs.entrySet()) {
-                int type = Integer.parseInt(keySet.getKey());
+            try{
+                Object objDataPairs = new JSONParser().parse(new FileReader("dataPairs.json"));
 
-                JSONArray objRGBs = (JSONArray) keySet.getValue();
-                List<RGB> RGBs = new ArrayList<>();
-                for (int i = 0, size = objRGBs.size(); i < size; i++) {
-                    Map<String, Long> RGB = (JSONObject) objRGBs.get(i);
+                Map<String, Object> mapDataPairs = (JSONObject)objDataPairs;
+                for (Map.Entry<String, Object> keySet: mapDataPairs.entrySet()) {
+                    int type = Integer.parseInt(keySet.getKey());
 
-                    int r = RGB.get("red").intValue();
-                    int g = RGB.get("green").intValue();
-                    int b = RGB.get("blue").intValue();
+                    JSONArray objRGBs = (JSONArray) keySet.getValue();
+                    List<RGB> RGBs = new ArrayList<>();
+                    for (int i = 0, size = objRGBs.size(); i < size; i++) {
+                        Map<String, Long> RGB = (JSONObject) objRGBs.get(i);
 
-                    RGBs.add(new RGB(r,g,b));
+                        int r = RGB.get("red").intValue();
+                        int g = RGB.get("green").intValue();
+                        int b = RGB.get("blue").intValue();
 
+                        RGBs.add(new RGB(r,g,b));
+
+                    }
+                    dataPairs.put(type, RGBs);
                 }
-                dataPairs.put(type, RGBs);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
+
+
+
+
+        
 
     }
 

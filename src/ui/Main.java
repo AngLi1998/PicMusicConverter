@@ -5,7 +5,6 @@ import javazoom.jl.player.Player;
 import module.GetTheMainRGB;
 import module.RGB;
 import module.Train;
-import org.json.simple.parser.ParseException;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -17,6 +16,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.Random;
 
 
@@ -43,14 +43,14 @@ public class Main extends JFrame {
     private Train train;
 
 
-    public static void main(String[] args) throws IOException, ParseException {
+    public static void main(String[] args) throws IOException, ParseException, org.json.simple.parser.ParseException {
         Main m = new Main();
         m.Player();
 
     }
 
 
-    public void Player() throws IOException, ParseException {
+    public void Player() throws IOException, ParseException, org.json.simple.parser.ParseException {
         train = new Train();
 
         setTitle("Picture Player");
