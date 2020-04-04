@@ -29,13 +29,21 @@ public class Main extends JFrame {
     private int size = 20;
 
 
-    private String typeOne = "Action";
-    private String typeTwo = "Beauty & Style";
-    private String typeThree = "Education";
-    private String typeFour = "Entertainment";
-    private String typeFive = "News & Politics";
-    private String typeSix = "Tech & Science";
-    private String typeSeven = "Travel";
+//    private String typeOne = "Action";
+//    private String typeTwo = "Beauty & Style";
+//    private String typeThree = "Education";
+//    private String typeFour = "Entertainment";
+//    private String typeFive = "News & Politics";
+//    private String typeSix = "Tech & Science";
+//    private String typeSeven = "Travel";
+
+    private String typeOne = "A";
+    private String typeTwo = "B";
+    private String typeThree = "C";
+    private String typeFour = "D";
+    private String typeFive = "E";
+    private String typeSix = "F";
+    private String typeSeven = "G";
 
 
     private RGB rgb = null;

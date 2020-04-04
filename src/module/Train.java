@@ -48,7 +48,7 @@ public class Train {
             algorithm.add(1.0); //hold actual weight of input 2
             algorithm.add(1.0); //hold actual weight of input 3
             algorithm.add(1.0); //value of input 0; it's the bias
-            algorithms.put(i, algorithm);
+            algorithms.put(i+1, algorithm);
         }
 
         //read from file
@@ -67,12 +67,16 @@ public class Train {
         }
 
         //train
-        for (Map.Entry<Integer, List<RGB>> keySet: dataPairs.entrySet()) {
-            int type = keySet.getKey();
-            List<RGB> RGBs = keySet.getValue();
-            for(RGB rgb: RGBs){
-                trainOneDataPair(rgb, type);
+        for(int i = 0; i<10000; i++){
+            error_sum = 0;
+            for (Map.Entry<Integer, List<RGB>> keySet : dataPairs.entrySet()) {
+                int type = keySet.getKey();
+                List<RGB> RGBs = keySet.getValue();
+                for (RGB rgb : RGBs) {
+                    trainOneDataPair(rgb, type);
+                }
             }
+            System.out.println(error_sum);
         }
 
     }
@@ -228,7 +232,7 @@ public class Train {
     private void trainOneAlgorithm(int algorithmNum, int red, int green, int blue, int expectOutput){
 
         //Define y here.
-        double y = algorithms.get(algorithmNum).get(4) * algorithms.get(algorithmNum).get(1) + sin(red) * algorithms.get(algorithmNum).get(2) + sin(green) * algorithms.get(algorithmNum).get(3) + sin(blue) * algorithms.get(algorithmNum).get(3);
+        double y = algorithms.get(algorithmNum).get(4) * algorithms.get(algorithmNum).get(0) + red * algorithms.get(algorithmNum).get(1) + green * algorithms.get(algorithmNum).get(2) + blue * algorithms.get(algorithmNum).get(3);
 
         //Create an if-statement for y.
         int f_x;
@@ -243,6 +247,7 @@ public class Train {
 
         //Define the error.
         error = expectOutput - f_x;
+        System.out.println(error);
 
         // Define the error_sum.
         error_sum = error_sum + abs(error);
